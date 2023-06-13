@@ -78,3 +78,29 @@ export default function Page() {
 
   )
 }
+
+import styles from './styles.module.css';
+import Image from 'next/image';
+import Head from './Head';
+import SearchBar from './SearchBar';
+
+export default function Page() {
+  const handleSearch = (searchTerm) => {
+    // Lógica para filtrar os Pokémon com base no termo de pesquisa
+  };
+
+  return (
+    
+    <html>
+      <html>
+      <Head />
+      <body className={styles.body}>
+        <div className={styles.Titulo}>
+          <h1 className={styles.h1}>Pokedex</h1>
+        </div>
+        <SearchBar onSearch={handleSearch} />
+        {/* Restante do código */}
+      </body>
+    </html>
+  );
+}
